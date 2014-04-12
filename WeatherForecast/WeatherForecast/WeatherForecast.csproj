@@ -69,6 +69,8 @@
     <Content Include="Bootstrap\js\Script.js" />
     <Content Include="Bootstrap\js\Underscore.js" />
     <Content Include="images\canada.GIF" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\sunny.jpg" />
     <Content Include="images\weather_image.gif" />
     <Content Include="Web.config" />
   </ItemGroup>

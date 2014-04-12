@@ -1,0 +1,498 @@
+﻿.heading {
+    color: azure;
+}
+
+#bottomBar {
+    margin-left: 78px;
+    width: 105%;
+    margin-top: 10px;
+    float: none;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: -25px;
+    background-color: white;
+}
+
+#headBar {
+    margin-left: 78px;
+    width: 1185px;
+    margin-top: 10px;
+    height: 250px;
+    margin-top: 58px;
+    border: dashed;
+    margin-left: 91px;
+}
+
+.login-button {
+    margin-top: 8px;
+    margin-right: 75px;
+}
+
+.makingPostButton {
+    margin-right: 155px;
+    margin-top: 10px;
+}
+
+.show {
+    margin-top: 30px;
+    background-color: white;
+}
+
+.space {
+    width: 371px;
+    margin-top: 50px;
+    margin-right: -20px;
+}
+
+.newAuthor {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.innerbox {
+    margin-top: 29px;
+    width: 785px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.alignment {
+    text-align: center;
+}
+
+.innerSide {
+    height: 300px;
+    margin-right: -10px;
+    width: 355px;
+    margin-top: 6px;
+}
+
+.rightInnerSide {
+    margin-right: -355px;
+    width: 355px;
+    margin-top: 145px;
+}
+
+.innerSide2 {
+    margin-right: -10px;
+    width: 355px;
+    margin-top: 527px;
+    margin-right: -356px;
+}
+
+.innerSide3 {
+    height: 45px;
+    margin-right: -10px;
+    width: 355px;
+    margin-top: 20px;
+}
+
+.detailedpost {
+    font-size: 13px;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.icons {
+    width: 40px;
+    height: 37px;
+}
+
+.glyphiconIcons {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.quickLinks {
+    font-size: 12px;
+}
+
+.bottomDivLinks {
+    font-size: 15px;
+    margin-top: 223px;
+    padding: 0 5px 0 5px;
+    border-right: 1px solid white;
+}
+
+.blogImage {
+    width: 75px;
+    margin-top: 10px;
+}
+
+.profileImage {
+    width: 135px;
+    height: 130px;
+    margin-left: 85px;
+}
+
+.profileImageDiv {
+    margin-top: 14px;
+}
+
+.profileEmail {
+    font-size: 15px;
+    margin-top: 60px;
+}
+
+.profileName {
+    margin-top: -43px;
+    font-size: 40px;
+    margin-left: -5px;
+}
+
+.profileSubName {
+    margin-top: -95px;
+}
+
+.mainInnerBox {
+    margin-left: 75px;
+}
+
+.blogHeading {
+    margin-top: -10px;
+    padding-top: 1px;
+}
+
+.blogContent {
+    padding-bottom: 20px;
+}
+
+.postHeading {
+    font-size: 20px;
+}
+
+.postBody {
+    font-size: 15px;
+}
+
+.datePosted {
+    margin-top: -10px;
+}
+
+.postedBy {
+    margin-left: 100px;
+}
+
+.foo a:visited {
+    display: none;
+}
+
+.buttons {
+    margin-top: -50px;
+}
+
+.profileDetails {
+    padding-right: 15px;
+    height: 170px;
+}
+
+.profileTable {
+    margin-right: -245px;
+    margin-top: -75px;
+    padding-right: 10px;
+    padding-top: 23px;
+}
+
+.profileSummary {
+    width: 360px;
+    margin-top: -75px;
+    margin-left: 231px;
+}
+
+.MyRecentBlogs {
+    margin-top: 65px;
+    margin-left: 80px;
+    background-color: white;
+}
+
+.basicColor {
+    color: black;
+    margin-left: 14px;
+}
+
+.TechnologyPost {
+    display: none;
+}
+
+.ProgrammingPost {
+    display: none;
+}
+
+
+.recentPostHeading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -55px;
+}
+
+/*.profileDropdown {
+    margin-left: 1137px;
+    margin-top: -33px;
+}*/
+
+.userLabelPlace {
+    margin-right: 77px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display:none;
+}
+
+.searchBox {
+    padding-left: 823px;
+    height: 125px;
+    width: 0px;
+    margin-right: -7px;
+    padding-left: 353px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.searchBar {
+    width: 80%;
+    margin-top: 35px;
+}
+
+.searchBardiv {
+    margin-left: -338px;
+}
+
+.searchButton {
+    margin-top: -34px;
+    margin-right: 46px;
+    height: 34px;
+}
+
+.profileName {
+    margin-left: -55px;
+    font-size: 16px;
+}
+
+.profileNameDropdown {
+    margin-top: 20px;
+    margin-left: -60px;
+}
+
+/*#userLabel {
+    margin-left: 76px;
+}*/
+.contactForm {
+    margin-top: 20px;
+}
+
+.contactformTextArea {
+    width: 46%;
+    margin-left: 147px;
+}
+
+.footterLinks {
+    text-decoration: none;
+}
+
+.sidebox {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.topHeader {
+    margin-top: 60px;
+    margin-left: 65px;
+    margin-right: 60px;
+    padding-top: 235px;
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+.topics {
+    margin-top: -230px;
+}
+
+.topicHeading {
+    margin-top: 23px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.topicBox {
+    height: 278px;
+}
+
+    .topicBox:hover {
+        opacity: .7;
+        -webkit-transform: scale(1.05,1.07);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 250ms;
+        -moz-transform: scale(1.05,1.07);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 250ms;
+        position: relative;
+        z-index: 99;
+    }
+
+.buttonStyle {
+    margin-left: 35px;
+}
+
+.topicImage {
+    height: 158px;
+    width: 267px;
+}
+
+.shareBlog {
+    background-color: white;
+    height: 78px;
+    width: 785px;
+    margin-left: 74px;
+}
+
+.shareDiv {
+    width: 500px;
+    float: right;
+    height: 44px;
+    margin-right: 130px;
+    margin-top: -6px;
+}
+
+.shareHeading {
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 3px 0;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    width: 15.625%;
+    float: left;
+    position: static;
+    background: none;
+    border: none;
+}
+
+.postComment {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.shareIcon {
+    margin-left: -7px;
+}
+
+.shareImageIcon {
+    height: 18px;
+    margin-left: -5px;
+    padding-right: 3px;
+}
+
+#pswd_info {
+    position: absolute;
+    margin-bottom: 195PX;
+    margin-right: 250PX;
+    right: 55px;
+    width: 208px;
+    padding: 15px;
+    background: #fefefe;
+    font-size: .875em;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #ccc;
+    border: 1px solid #ddd;
+    margin-right:-10px;
+    display:none;
+}
+
+    #pswd_info h4 {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    #pswd_info::before {
+        content: "\25B2";
+        position: absolute;
+        top: -12px;
+        left: 45%;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ddd;
+        text-shadow: none;
+        display: block;
+    }
+
+.invalid {
+    background: url(Images/button_cancel.png) no-repeat 0 50%;
+    padding-left: 22px;
+    line-height: 24px;
+    color: #ec3f41;
+}
+
+.valid {
+    background: url(Images/check.png) no-repeat 0 50%;
+    padding-left: 22px;
+    line-height: 24px;
+    color: #3a7d34;
+}
+
+#dialogoverlay {
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+}
+
+#dialogbox {
+    display: none;
+    position: fixed;
+    background: #000;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+}
+
+    #dialogbox > div {
+        background: #FFF;
+        margin: 8px;
+    }
+
+        #dialogbox > div > #dialogboxhead {
+            background: #666;
+            font-size: 19px;
+            padding: 10px;
+            color: #CCC;
+        }
+
+        #dialogbox > div > #dialogboxbody {
+            background: #333;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        #dialogbox > div > #dialogboxfoot {
+            background: #666;
+            padding: 10px;
+            text-align: right;
+        }
+
+#deletePost {
+    padding-right: 45px;
+}
+
+#commentOnPost {
+    padding-left: 50px;
+}

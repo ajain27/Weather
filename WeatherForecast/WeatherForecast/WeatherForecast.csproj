@@ -57,12 +57,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\arrow-curve-180-left.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\arrow-curve.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\clipboard.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\cross-script.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\document-copy.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\icons\scissors.png" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\index.html" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\jquery.dropdown.css" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\jquery.dropdown.js" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\jquery.dropdown.min.js" />
+    <Content Include="Bootstrap\css\blog.css" />
+    <Content Include="Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Bootstrap\js\Backbone.js" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\Underscore.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\.gitignore" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\component.json" />
+    <Content Include="Bootstrap\Bootstrap-style-dropdown\readme.md" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="data.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

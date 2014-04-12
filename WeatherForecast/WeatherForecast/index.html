@@ -12,15 +12,15 @@
 
 
 
+</head>
+<body>
+
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="Bootstrap/js/bootstrap.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="Bootstrap/js/Underscore.js"></script>
     <script src="Bootstrap/js/Backbone.js"></script>
-</head>
-<body>
-
-    
 
         <script type="text/template" id="weather_template">
             <div class="main">
@@ -96,35 +96,54 @@
             }
 
         });
-
         VieObject = new WeatherView();
-        Weather = Backbone.Model.extend({  // creating the model via backbone
-            initialize: function () {    // declaring the initialize function, acts as a constructor
-                console.log("object is created");
 
-                //this.on("change:name", function () { // tracking the chage made to the object                    
-                //alert("Name has been changed ");
+        //***************Router Created ****************************
 
-                //});
-            },
+        var Router = Backbone.Router.extend({
+            routes: {
 
-            defaults: { // setting the default values.
-
-                name: "Ankit Jain",
-                age: "27"
-            },
-
-            getNameAndAge: function () {
-
-                console.log("Name is " + this.get('name') + " and Age is " + this.get('age'));
+                '':'home'
             }
+        });
+
+        var route = new Router();
+        route.on('route:home', function () {
+         
 
 
         });
 
-        var weatherObj = new Weather(); // making the objec of the model
-        console.log(weatherObj.get('name'));
-        console.log(weatherObj.get('age'));
+        Backbone.history.start();
+
+
+        //Weather = Backbone.Model.extend({  // creating the model via backbone
+        //    initialize: function () {    // declaring the initialize function, acts as a constructor
+        //        console.log("object is created");
+
+        //        //this.on("change:name", function () { // tracking the chage made to the object                    
+        //        //alert("Name has been changed ");
+
+        //        //});
+        //    },
+
+        //    defaults: { // setting the default values.
+
+        //        name: "Ankit Jain",
+        //        age: "27"
+        //    },
+
+        //    getNameAndAge: function () {
+
+        //        console.log("Name is " + this.get('name') + " and Age is " + this.get('age'));
+        //    }
+
+
+        //});
+
+        //var weatherObj = new Weather(); // making the objec of the model
+        //console.log(weatherObj.get('name'));
+        //console.log(weatherObj.get('age'));
         //weatherObj.getNameAndAge();// Calling the function.
         //weatherObj.set({name:"Nitika"}); // Setting the new value
 

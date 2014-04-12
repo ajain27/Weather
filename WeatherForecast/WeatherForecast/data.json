@@ -1,0 +1,171 @@
+﻿{
+    "query": {
+        "count": 1,
+        "created": "2014-04-12T02:15:34Z",
+        "lang": "en-US",
+        "diagnostics": {
+            "url": [
+                {
+                    "execution-start-time": "0",
+                    "execution-stop-time": "62",
+                    "execution-time": "62",
+                    "content": "http://datatables.org/alltables.env"
+                },
+                {
+                    "execution-start-time": "62",
+                    "execution-stop-time": "126",
+                    "execution-time": "64",
+                    "content": "http://www.datatables.org/weather/weather.bylocation.xml"
+                },
+                {
+                    "execution-start-time": "131",
+                    "execution-stop-time": "144",
+                    "execution-time": "13",
+                    "content": "http://wws.geotech.yahooapis.com/v1/places.q(Vancouver);start=0;count=1"
+                },
+                {
+                    "execution-start-time": "145",
+                    "execution-stop-time": "315",
+                    "execution-time": "170",
+                    "content": "http://weather.yahooapis.com/forecastrss?w=9807&u=null"
+                }
+            ],
+            "publiclyCallable": "true",
+            "cache": {
+                "execution-start-time": "130",
+                "execution-stop-time": "130",
+                "execution-time": "0",
+                "method": "GET",
+                "type": "MEMCACHED",
+                "content": "266f06d471cda6575022099bcb19d661"
+            },
+            "query": {
+                "execution-start-time": "130",
+                "execution-stop-time": "145",
+                "execution-time": "15",
+                "content": "select woeid from geo.places(1) where text=\"Vancouver\""
+            },
+            "javascript": {
+                "execution-start-time": "127",
+                "execution-stop-time": "316",
+                "execution-time": "188",
+                "instructions-used": "20583",
+                "table-name": "weather.bylocation"
+            },
+            "user-time": "317",
+            "service-time": "309",
+            "build-version": "0.2.2418"
+        },
+        "results": {
+            "weather": {
+                "xmlns": "http://where.yahooapis.com/v1/schema.rng",
+                "rss": {
+                    "version": "2.0",
+                    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+                    "yweather": "http://xml.weather.yahoo.com/ns/rss/1.0",
+                    "channel": {
+                        "title": "Yahoo! Weather - Vancouver, CA",
+                        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Vancouver__CA/*http://weather.yahoo.com/forecast/CAXX0518_f.html",
+                        "description": "Yahoo! Weather for Vancouver, CA",
+                        "language": "en-us",
+                        "lastBuildDate": "Fri, 11 Apr 2014 6:00 pm PDT",
+                        "ttl": "60",
+                        "location": {
+                            "city": "Vancouver",
+                            "country": "Canada",
+                            "region": "BC"
+                        },
+                        "units": {
+                            "distance": "mi",
+                            "pressure": "in",
+                            "speed": "mph",
+                            "temperature": "F"
+                        },
+                        "wind": {
+                            "chill": "57",
+                            "direction": "180",
+                            "speed": "6"
+                        },
+                        "atmosphere": {
+                            "humidity": "63",
+                            "pressure": "30.05",
+                            "rising": "0",
+                            "visibility": ""
+                        },
+                        "astronomy": {
+                            "sunrise": "6:29 am",
+                            "sunset": "7:57 pm"
+                        },
+                        "image": {
+                            "title": "Yahoo! Weather",
+                            "width": "142",
+                            "height": "18",
+                            "link": "http://weather.yahoo.com",
+                            "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                        },
+                        "item": {
+                            "title": "Conditions for Vancouver, CA at 6:00 pm PDT",
+                            "lat": "49.25",
+                            "long": "-123.11",
+                            "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Vancouver__CA/*http://weather.yahoo.com/forecast/CAXX0518_f.html",
+                            "pubDate": "Fri, 11 Apr 2014 6:00 pm PDT",
+                            "condition": {
+                                "code": "30",
+                                "date": "Fri, 11 Apr 2014 6:00 pm PDT",
+                                "temp": "57",
+                                "text": "Partly Cloudy"
+                            },
+                            "description": "<img src=\"http://l.yimg.com/a/i/us/we/52/30.gif\"/><br />\n<b>Current Conditions:</b><br />\nPartly Cloudy, 57 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Partly Cloudy. High: 53 Low: 44<br />\nSat - Sunny. High: 56 Low: 42<br />\nSun - Sunny. High: 60 Low: 45<br />\nMon - Partly Cloudy. High: 60 Low: 47<br />\nTue - Few Showers. High: 54 Low: 46<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Vancouver__CA/*http://weather.yahoo.com/forecast/CAXX0518_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>",
+                            "forecast": [
+                                {
+                                    "code": "29",
+                                    "date": "11 Apr 2014",
+                                    "day": "Fri",
+                                    "high": "53",
+                                    "low": "44",
+                                    "text": "Partly Cloudy"
+                                },
+                                {
+                                    "code": "32",
+                                    "date": "12 Apr 2014",
+                                    "day": "Sat",
+                                    "high": "56",
+                                    "low": "42",
+                                    "text": "Sunny"
+                                },
+                                {
+                                    "code": "32",
+                                    "date": "13 Apr 2014",
+                                    "day": "Sun",
+                                    "high": "60",
+                                    "low": "45",
+                                    "text": "Sunny"
+                                },
+                                {
+                                    "code": "30",
+                                    "date": "14 Apr 2014",
+                                    "day": "Mon",
+                                    "high": "60",
+                                    "low": "47",
+                                    "text": "Partly Cloudy"
+                                },
+                                {
+                                    "code": "11",
+                                    "date": "15 Apr 2014",
+                                    "day": "Tue",
+                                    "high": "54",
+                                    "low": "46",
+                                    "text": "Few Showers"
+                                }
+                            ],
+                            "guid": {
+                                "isPermaLink": "false",
+                                "content": "CAXX0518_2014_04_15_7_00_PDT"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

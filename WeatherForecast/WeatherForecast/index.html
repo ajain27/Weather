@@ -3,15 +3,15 @@
 <head>
     <title>Weather Forecast </title>
 
-   
+
     <link href="Bootstrap/css/blog.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
     <link href="Bootstrap/css/blog.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 
 
-    
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="Bootstrap/js/bootstrap.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -20,86 +20,63 @@
 </head>
 <body>
 
+    
 
-    <script type="text/template" id="weather_template">
+        <script type="text/template" id="weather_template">
+            <div class="main">
+            <nav class="navbar navbar-inverse" role="navigation">
 
-        <nav class="navbar navbar-inverse" role="navigation">
+
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">MyWeather.com</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="http://github.com/ajain27">My Github</a></li>                                                      
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                            <a href="#">Change Country</a>
+                            <img src="images/canada.gif" class="img-circle" style="height: 16px;width: 16px;">
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
 
 
-            <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+            </nav>
+            <div class="wrapper">
+                
+                <div class="upperDiv">
+                    <a href="http://www.accuweather.com/en/world-weather" class="hyperlinks">World></a>
+                    <a href="http://www.accuweather.com/en/north-america-weather" class="hyperlinks">North America></a>
+                    <a href="http://www.accuweather.com/en/ca/bc/british-columbia-weather" class="hyperlinks">British Columbia></a>
+                    <a href="http://www.accuweather.com/en/ca/vancouver/v5z/weather-forecast/53286" class="hyperlinks">Vancouver</a>
+                </div>
+                <div class="row">
+                    <img src="http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif" style="margin-left: 15px;" />
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-           
-
-        </nav>
-        <div class="wrapper">
-            <div class="">
-
+                </div>
             </div>
-            <div class="container">
-            <a href="http://www.accuweather.com/en/world-weather" class="hyperlinks" style="margin-left: 35px;">World></a>
-            <a href="http://www.accuweather.com/en/north-america-weather" class="hyperlinks">North America></a>
-            <a href="http://www.accuweather.com/en/ca/bc/british-columbia-weather" class="hyperlinks">British Columbia></a>
-            <a href="http://www.accuweather.com/en/ca/vancouver/v5z/weather-forecast/53286" class="hyperlinks">Vancouver</a>
-          </div>
-        </div>
-        
-
+            </div>
 
     </script>
-
-
-
-
-
     <div class="container"></div>
     <script type="text/javascript">
 
@@ -117,14 +94,10 @@
                 var template = _.template($("#weather_template").html(), {});
                 this.$el.html(template);
             }
-            
+
         });
 
         VieObject = new WeatherView();
-
-
-
-
         Weather = Backbone.Model.extend({  // creating the model via backbone
             initialize: function () {    // declaring the initialize function, acts as a constructor
                 console.log("object is created");
@@ -138,7 +111,7 @@
             defaults: { // setting the default values.
 
                 name: "Ankit Jain",
-                age:"27"
+                age: "27"
             },
 
             getNameAndAge: function () {

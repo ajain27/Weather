@@ -1,8 +1,19 @@
-﻿.hyperlinks {    
-    color: white;
+﻿.main {    
+   background-color:whitesmoke;
 }
 
 .wrapper {
     border:groove;
     height: 1000px;
+}
+
+.upperDiv {
+    
+    height: 65px;
+    background-color:black;
+    text-align: center;
+    line-height: 40px;
+}
+.hyperlinks:hover {
+    color:white;
 }

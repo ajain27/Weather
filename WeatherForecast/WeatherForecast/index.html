@@ -74,7 +74,8 @@
 
                 <div class="mainWeather">
                     <div class="currentWeather pull-left">
-                        <p class="condition">Today</p>
+                        <p class="condition">Saturday</p>
+                        <p class="condition">April 12 2014</p>
                         <div class="weatherToday">
                             <p>
                                 <img src="images/cloud.png" />
@@ -88,8 +89,10 @@
                             </p>
                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                         </div>
+                       
                     </div>                     
                 </div>
+                 <hr />
 
                 <div class="currentWeather pull-left">
                         <p class="condition">Tomorrow</p>
@@ -139,10 +142,22 @@
                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                         </div>
                     </div>
+                  <div class="currentWeather pull-left">
+                        <p class="condition">Overcast</p>
+                        <div class="weatherToday">
+                            <p>
+                                <img src="images/cloud.png" />
+                            </p>
 
-
-
-
+                            <p class="temprature pull-right">
+                                13&deg
+                            </p>
+                            <p class="feels-like">
+                                Feels Like
+                            </p>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
+                        </div>
+                    </div>
             </div>
         </div>
 
@@ -153,17 +168,15 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="myModalLabel">Weather Details</h4>
                     </div>
-                    <div class="modal-body">
-                       <span class="label label-default">Default</span><br />
-                        <span class="label label-default">Default</span><br />
-                        <span class="label label-default">Default</span><br />
-                        <span class="label label-default">Default</span><br />
-                        <span class="label label-default">Default</span><br />
+                    <div class="modal-body">                      
+                        <p>Humidity:</p>
+                        <p>Pressure:</p>
+                        <p>Rising:</p>
+                        <p>Visibility:</p>
                     
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-                      
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>                      
                     </div>
                 </div>
             </div>
@@ -172,23 +185,26 @@
     <div class="container" ></div>
     <script type="text/javascript">
 
+        $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+            options.url = 'http://backbonejs-beginner.herokuapp.com' + options.url;
+        });
+
         //**********View Created***************
         WeatherView = Backbone.View.extend({
 
             el: $(".container"),
             initialize: function () { // This function runs as soon as the application runs
-
+                this.render();
             },
 
             render: function () {
 
                 var template = _.template($("#weather_template").html(), {});
-                this.$el.html(template);
-            }
-
+                this.$el.html(template);               
+            },
         });
         ViewObject = new WeatherView();
-
+      
         //***************Router Created ****************************
 
         var Router = Backbone.Router.extend({
@@ -201,12 +217,66 @@
         var route = new Router();
         route.on('route:home', function () {
 
-            ViewObject.render();
             console.log("Home Template Loaded !!!");
 
         });
 
         Backbone.history.start();
+
+
+
+       var WeatheModal = Backbone.Model.extend({
+            initialize: function () {
+
+                url: "https://query.yahooapis.com/v1/public/yql?q=SELECT%20%2a%20FROM%20weather.bylocation%20WHERE%20location%3D%22Vancouver%22&format=json&diagnostics=true&env=http://datatables.org/alltables.env&callback= "
+              
+            }
+       });
+
+        //************Created a Collection**************
+       var WeatherCollection = Backbone.Collection.extend({
+
+           model: WeatheModal
+
+       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         //Weather = Backbone.Model.extend({  // creating the model via backbone

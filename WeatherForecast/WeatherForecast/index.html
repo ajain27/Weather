@@ -234,8 +234,7 @@
                 "day": "",
                 "high": "",
                 "low": "",
-                "text": "",
-                "temp": "",
+                "text": "",                
                 "humidity": "",
                 "pressure": "",
                 "rising": "",
@@ -245,10 +244,61 @@
             },
 
                  
-      });
+        });
 
-        var modelObj = new WeatheModal({ id: 1 });
-        //this.get("city");
+        WeatherCollection = Backbone.Colletions.extend({
+
+            model: WeatheModal,
+
+            "date": "",
+            "day": "",
+            "humidity": "",
+            "pressure": "",
+            "temperature": "",
+            "city": "",
+
+            url:function() {
+                var currentUrl = 'https://query.yahooapis.com/v1/public/yql?q=SELECT%20%2a%20FROM%20weather.bylocation%20WHERE%20location%3D%22Vancouver%22&format=json&diagnostics=true&env=http://datatables.org/alltables.env&callback= ' + this.city + ',' + this.date + ',' + ',' + this.day + ',' + this.pressure + ',' + this.pressure + ',' + this.temperature;
+                return currentUrl;
+            },
+            configRequest : function (options) {
+
+                this.city = options.city;
+                this.temperature = options.temprature;
+                this.pressure = options.pressure;
+                this.day = options.day;
+                this.humidity = options.humidity;
+                this.date = options.date;
+
+            }, 
+
+            synch: function (method, model, options) {
+
+                options.timeout = 1000;
+                options.dataType = "JSON";
+                return Backbone.synch(method, model, options);
+
+
+            },
+
+            parse : function(response) {
+
+                if (response.ok) {
+
+                    var data = new Array();
+                    var that = this;
+                    _.each(response.results, function (element, index, list) {
+
+
+
+                    });
+
+
+                }
+
+            }
+
+        });
 
 
 

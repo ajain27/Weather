@@ -22,7 +22,7 @@
 
 
     <script type="text/template" id="weather_template">
-        <div class="main" style="background-image:url('images/sunny.jpg');">
+        <div class="main" style="background-image: url('images/sunny.jpg');">
             <nav class="navbar navbar-inverse" role="navigation">
 
 
@@ -74,90 +74,79 @@
 
                 <div class="mainWeather">
                     <div class="currentWeather pull-left">
-                        <p class="condition">Saturday</p>
-                        <p class="condition">April 12 2014</p>
+                        <p class="condition" style="font-weight:bold;">Monday</p>
+                        <p class="condition" style="font-weight:bold;"></p>
                         <div class="weatherToday">
                             <p>
                                 <img src="images/cloud.png" />
                             </p>
 
-                            <p class="temprature pull-right">
-                                13&deg
-                            </p>
+                            <p class="temprature pull-right">13&deg</p>
                             <p class="feels-like">
                                 Feels Like
                             </p>
                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                         </div>
-                       
-                    </div>                     
+
+                    </div>
                 </div>
-                 <hr />
+                <hr />
 
                 <div class="currentWeather pull-left">
-                        <p class="condition">Tomorrow</p>
-                        <div class="weatherToday">
-                            <p>
-                                <img src="images/cloud.png" />
-                            </p>
+                    <p class="condition" style="font-weight:bold;">Tuesday</p>
+                    <div class="weatherToday">
+                        <p>
+                            <img src="images/cloud.png" />
+                        </p>
 
-                            <p class="temprature pull-right">
-                                13&deg
-                            </p>
-                            <p class="feels-like">
-                                Feels Like
-                            </p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
-                        </div>
+                         <p class="temprature pull-right">13&deg</p>
+                        <p class="feels-like">
+                            Feels Like
+                        </p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                     </div>
-                     <div class="currentWeather pull-left">
-                        <p class="condition">Day After</p>
-                        <div class="weatherToday">
-                            <p>
-                                <img src="images/cloud.png" />
-                            </p>
+                </div>
+                <div class="currentWeather pull-left">
+                    <p class="condition" style="font-weight:bold;">Wednesday</p>
+                    <div class="weatherToday">
+                        <p>
+                            <img src="images/cloud.png" />
+                        </p>
 
-                            <p class="temprature pull-right">
-                                13&deg
-                            </p>
-                            <p class="feels-like">
-                                Feels Like
-                            </p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
-                        </div>
+                        <p class="temprature pull-right">13&deg</p>
+                        <p class="feels-like">
+                            Feels Like
+                        </p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                     </div>
-                     <div class="currentWeather pull-left">
-                        <p class="condition">Overcast</p>
-                        <div class="weatherToday">
-                            <p>
-                                <img src="images/cloud.png" />
-                            </p>
+                </div>
+                <div class="currentWeather pull-left">
+                    <p class="condition" style="font-weight:bold;">Thursday</p>
+                    <div class="weatherToday">
+                        <p>
+                            <img src="images/cloud.png" />
+                        </p>
+                            <p class="temprature pull-right">13&deg</p>
+                        <p class="feels-like">
+                            Feels Like
+                        </p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
+                    </div>
+                </div>
+                <div class="currentWeather pull-left">
+                    <p class="condition" style="font-weight:bold;">Friday</p>
+                    <div class="weatherToday">
+                        <p>
+                            <img src="images/cloud.png" />
+                        </p>
 
-                            <p class="temprature pull-right">
-                                13&deg
-                            </p>
-                            <p class="feels-like">
-                                Feels Like
-                            </p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
-                        </div>
+                         <p class="temprature pull-right">13&deg</p>
+                        <p class="feels-like">
+                            Feels Like
+                        </p>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
                     </div>
-                  <div class="currentWeather pull-left">
-                        <p class="condition">Overcast</p>
-                        <div class="weatherToday">
-                            <p>
-                                <img src="images/cloud.png" />
-                            </p>
-
-                            <p class="temprature pull-right">
-                                13&deg
-                            </p>
-                            <p class="feels-like">
-                                Feels Like
-                            </p>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View Details</button>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
 
@@ -168,21 +157,20 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="myModalLabel">Weather Details</h4>
                     </div>
-                    <div class="modal-body">                      
+                    <div class="modal-body">
                         <p>Humidity:</p>
                         <p>Pressure:</p>
                         <p>Rising:</p>
                         <p>Visibility:</p>
-                    
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>                      
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
                     </div>
                 </div>
             </div>
         </div>
     </script>
-    <div class="container" ></div>
+    <div class="container"></div>
     <script type="text/javascript">
 
         $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
@@ -200,11 +188,11 @@
             render: function () {
 
                 var template = _.template($("#weather_template").html(), {});
-                this.$el.html(template);               
+                this.$el.html(template);
             },
         });
         ViewObject = new WeatherView();
-      
+
         //***************Router Created ****************************
 
         var Router = Backbone.Router.extend({
@@ -216,30 +204,51 @@
 
         var route = new Router();
         route.on('route:home', function () {
-
+            ViewObject.render();
             console.log("Home Template Loaded !!!");
-
+            
         });
 
         Backbone.history.start();
 
+        //***************Creating a Model**********************
+       
+        var WeatheModal = Backbone.Model.extend({
+            initialize: function() {
 
+                console.log('Model object has been craeted');
+                this.on("change:city", function () {
 
-       var WeatheModal = Backbone.Model.extend({
-            initialize: function () {
+                    console.log('model name has been changed');
 
-                url: "https://query.yahooapis.com/v1/public/yql?q=SELECT%20%2a%20FROM%20weather.bylocation%20WHERE%20location%3D%22Vancouver%22&format=json&diagnostics=true&env=http://datatables.org/alltables.env&callback= "
-              
-            }
-       });
+                });
 
-        //************Created a Collection**************
-       var WeatherCollection = Backbone.Collection.extend({
+            },
+             urlRoot : "https://query.yahooapis.com/v1/public/yql?q=SELECT%20%2a%20FROM%20weather.bylocation%20WHERE%20location%3D%22Vancouver%22&format=json&diagnostics=true&env=http://datatables.org/alltables.env&callback= ",
+           
+            
+            defaults: {
 
-           model: WeatheModal
+                "code": "",
+                "date": "",
+                "day": "",
+                "high": "",
+                "low": "",
+                "text": "",
+                "temp": "",
+                "humidity": "",
+                "pressure": "",
+                "rising": "",
+                "visibility": "",
+                "temperature": "",
+                "city": ""
+            },
 
-       });
+                 
+      });
 
+        var modelObj = new WeatheModal({ id: 1 });
+        //this.get("city");
 
 
 
